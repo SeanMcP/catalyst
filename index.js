@@ -8,9 +8,11 @@ const isValidPath = require('is-valid-path')
 const prettier = require('prettier')
 
 const init = () => {
-    console.log("==================================")
-    console.log(chalk.cyan(" ⚛️  Let's create a ") + chalk.cyan.bold("new component!"))
-    console.log("==================================")
+    console.log('==================================')
+    console.log(
+        chalk.cyan(" ⚛️  Let's create a ") + chalk.cyan.bold('new component!')
+    )
+    console.log('==================================')
 }
 
 const prettierConfig = {
@@ -144,4 +146,4 @@ const run = async () => {
     createFile(answers)
 }
 
-run()
+module.exports = run
